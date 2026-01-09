@@ -124,7 +124,7 @@ const setSearch = $((e: Event) => {
 
       {/* Grille moderne */}
       <div class="max-w-7xl mx-auto px-6 py-8">
-        <div class="grid grid-cols-5 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5" style="gap: 16px;">
+        <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3" style="gap: 16px;">
           {filteredProducts.map((product: Product) => (
             <ProductCard key={product.id} product={product} onAddToCart={onAddToCart} />
           ))}
